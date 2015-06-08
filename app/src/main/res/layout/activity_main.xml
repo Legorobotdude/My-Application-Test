@@ -7,16 +7,8 @@
 
     <TextView android:text="Welcome to the app" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/"
+        android:id="@+id/wat"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
-
-    <WebView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/webView"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/"
-        android:layout_toStartOf="@+id/" />
 
 </RelativeLayout>

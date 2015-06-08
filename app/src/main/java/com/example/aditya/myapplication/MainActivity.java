@@ -18,36 +18,13 @@ import java.io.InputStreamReader;
 
 
 public class MainActivity extends ActionBarActivity {
-    public WebView objwebview ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
 
-        WebView webView1 = new WebView(this);
-        setContentView(webView1);
-        objwebview = (WebView)findViewById(R.id.webView1);
-        HttpClient client = new DefaultHttpClient();
-        HttpGet request = new HttpGet("http://www.google.com");
-        try {
-            HttpResponse response = client.execute(request);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-            String line;
-            StringBuilder str = new StringBuilder();
-            while ((line = reader.readLine()) != null) {
-                str.append(line);
-            }
-            objwebview.loadData(str.toString(), "text/html", "UTF-8");
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-            objwebview.loadData(e.toString(), "text/html", "UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-            objwebview.loadData(e.toString(), "text/html", "UTF-8");
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
-            objwebview.loadData(e.toString(), "text/html", "UTF-8");
-        }
+
     }
 
 //danke memes
