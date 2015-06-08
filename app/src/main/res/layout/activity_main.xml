@@ -7,7 +7,7 @@
 
     <TextView android:text="Welcome to the app" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/wat"
+        android:id="@+id/welcome_text"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
