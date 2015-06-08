@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/webView"
         android:layout_below="@+id/"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="83dp" />
 
 </RelativeLayout>
